@@ -1,0 +1,35 @@
+{
+  "name": "ts-twitch-bot",
+  "version": "1.0.0",
+  "description": "Twitch bot made with Typescript",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "yarn clean && tsc -p .",
+    "start": "node dist/app.js",
+    "dev": "nodemon src/app.ts"
+  },
+  "author": "BurakBey",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/collection": "^0.1.6",
+    "chalk": "^4.1.0",
+    "fs": "0.0.1-security",
+    "tmi.js": "^1.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.10",
+    "@types/tmi.js": "^1.7.1",
+    "nodemon": "^2.0.6",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BUR4KBEY/ts-twitch-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BUR4KBEY/ts-twitch-bot/issues"
+  },
+  "homepage": "https://github.com/BUR4KBEY/ts-twitch-bot#readme"
+}
