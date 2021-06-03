@@ -10,7 +10,8 @@ yarn install
 You can find the configurations at `src/core/client.ts`. Don't forget to change the config before starting the bot.
 
 ## How To Get Access Token
-You can check from [here](https://dev.twitch.tv/docs/authentication/getting-tokens-oauth#oauth-implicit-code-flow).
+You can check from [here](https://dev.twitch.tv/docs/authentication/getting-tokens-oauth#oauth-implicit-code-flow).<br/>
+**Note:** If you want more help about `tmi.js`, [check here](https://www.youtube.com/watch?v=7uSjKbAUHXg).
 
 
 ## Scripts
