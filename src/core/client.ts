@@ -8,6 +8,7 @@ import { Handlers } from "./handlers";
 /** Config of the client */
 export const config = {
     prefix: "bot_prefix",
+    username: "bot_username",
     access_token: "access_token",
     channels: ["channel_1", "channel_2"],
     developers: ["twitch_id_1", "twitch_id_2"]
@@ -16,7 +17,10 @@ export const config = {
 /** The client */
 export const client = new Client({
     connection: { reconnect: true, secure: true },
-    identity: { password: `oauth:${config.access_token}` },
+    identity: {
+        username: config.username,
+        password: `oauth:${config.access_token}`
+    },
     channels: config.channels
 });
 
